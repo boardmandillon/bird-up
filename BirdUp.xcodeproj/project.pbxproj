@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532863122B0003350098DED2 /* BirdUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532863112B0003350098DED2 /* BirdUpApp.swift */; };
+		532863142B0003350098DED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532863132B0003350098DED2 /* ContentView.swift */; };
+		532863162B0003360098DED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532863152B0003360098DED2 /* Assets.xcassets */; };
+		532863192B0003360098DED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532863182B0003360098DED2 /* Preview Assets.xcassets */; };
+		532863232B0003360098DED2 /* BirdUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532863222B0003360098DED2 /* BirdUpTests.swift */; };
+		5328632D2B0003360098DED2 /* BirdUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328632C2B0003360098DED2 /* BirdUpUITests.swift */; };
+		5328632F2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328632E2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5328631F2B0003360098DED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532863062B0003350098DED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5328630D2B0003350098DED2;
+			remoteInfo = BirdUp;
+		};
+		532863292B0003360098DED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532863062B0003350098DED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5328630D2B0003350098DED2;
+			remoteInfo = BirdUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5328630E2B0003350098DED2 /* BirdUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		532863112B0003350098DED2 /* BirdUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpApp.swift; sourceTree = "<group>"; };
+		532863132B0003350098DED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		532863152B0003360098DED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		532863182B0003360098DED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5328631E2B0003360098DED2 /* BirdUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532863222B0003360098DED2 /* BirdUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpTests.swift; sourceTree = "<group>"; };
+		532863282B0003360098DED2 /* BirdUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5328632C2B0003360098DED2 /* BirdUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpUITests.swift; sourceTree = "<group>"; };
+		5328632E2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5328630B2B0003350098DED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5328631B2B0003360098DED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532863252B0003360098DED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532863052B0003350098DED2 = {
+			isa = PBXGroup;
+			children = (
+				532863102B0003350098DED2 /* BirdUp */,
+				532863212B0003360098DED2 /* BirdUpTests */,
+				5328632B2B0003360098DED2 /* BirdUpUITests */,
+				5328630F2B0003350098DED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5328630F2B0003350098DED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5328630E2B0003350098DED2 /* BirdUp.app */,
+				5328631E2B0003360098DED2 /* BirdUpTests.xctest */,
+				532863282B0003360098DED2 /* BirdUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		532863102B0003350098DED2 /* BirdUp */ = {
+			isa = PBXGroup;
+			children = (
+				532863112B0003350098DED2 /* BirdUpApp.swift */,
+				532863132B0003350098DED2 /* ContentView.swift */,
+				532863152B0003360098DED2 /* Assets.xcassets */,
+				532863172B0003360098DED2 /* Preview Content */,
+			);
+			path = BirdUp;
+			sourceTree = "<group>";
+		};
+		532863172B0003360098DED2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				532863182B0003360098DED2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		532863212B0003360098DED2 /* BirdUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				532863222B0003360098DED2 /* BirdUpTests.swift */,
+			);
+			path = BirdUpTests;
+			sourceTree = "<group>";
+		};
+		5328632B2B0003360098DED2 /* BirdUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5328632C2B0003360098DED2 /* BirdUpUITests.swift */,
+				5328632E2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift */,
+			);
+			path = BirdUpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5328630D2B0003350098DED2 /* BirdUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532863322B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUp" */;
+			buildPhases = (
+				5328630A2B0003350098DED2 /* Sources */,
+				5328630B2B0003350098DED2 /* Frameworks */,
+				5328630C2B0003350098DED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdUp;
+			productName = BirdUp;
+			productReference = 5328630E2B0003350098DED2 /* BirdUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5328631D2B0003360098DED2 /* BirdUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532863352B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUpTests" */;
+			buildPhases = (
+				5328631A2B0003360098DED2 /* Sources */,
+				5328631B2B0003360098DED2 /* Frameworks */,
+				5328631C2B0003360098DED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532863202B0003360098DED2 /* PBXTargetDependency */,
+			);
+			name = BirdUpTests;
+			productName = BirdUpTests;
+			productReference = 5328631E2B0003360098DED2 /* BirdUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		532863272B0003360098DED2 /* BirdUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532863382B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUpUITests" */;
+			buildPhases = (
+				532863242B0003360098DED2 /* Sources */,
+				532863252B0003360098DED2 /* Frameworks */,
+				532863262B0003360098DED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5328632A2B0003360098DED2 /* PBXTargetDependency */,
+			);
+			name = BirdUpUITests;
+			productName = BirdUpUITests;
+			productReference = 532863282B0003360098DED2 /* BirdUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		532863062B0003350098DED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5328630D2B0003350098DED2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					5328631D2B0003360098DED2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5328630D2B0003350098DED2;
+					};
+					532863272B0003360098DED2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5328630D2B0003350098DED2;
+					};
+				};
+			};
+			buildConfigurationList = 532863092B0003350098DED2 /* Build configuration list for PBXProject "BirdUp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 532863052B0003350098DED2;
+			productRefGroup = 5328630F2B0003350098DED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5328630D2B0003350098DED2 /* BirdUp */,
+				5328631D2B0003360098DED2 /* BirdUpTests */,
+				532863272B0003360098DED2 /* BirdUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5328630C2B0003350098DED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532863192B0003360098DED2 /* Preview Assets.xcassets in Resources */,
+				532863162B0003360098DED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5328631C2B0003360098DED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532863262B0003360098DED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5328630A2B0003350098DED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532863142B0003350098DED2 /* ContentView.swift in Sources */,
+				532863122B0003350098DED2 /* BirdUpApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5328631A2B0003360098DED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532863232B0003360098DED2 /* BirdUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532863242B0003360098DED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5328632F2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift in Sources */,
+				5328632D2B0003360098DED2 /* BirdUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532863202B0003360098DED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5328630D2B0003350098DED2 /* BirdUp */;
+			targetProxy = 5328631F2B0003360098DED2 /* PBXContainerItemProxy */;
+		};
+		5328632A2B0003360098DED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5328630D2B0003350098DED2 /* BirdUp */;
+			targetProxy = 532863292B0003360098DED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		532863302B0003360098DED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		532863312B0003360098DED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		532863332B0003360098DED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		532863342B0003360098DED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		532863362B0003360098DED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdUp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdUp";
+			};
+			name = Debug;
+		};
+		532863372B0003360098DED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdUp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdUp";
+			};
+			name = Release;
+		};
+		532863392B0003360098DED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdUp;
+			};
+			name = Debug;
+		};
+		5328633A2B0003360098DED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9YFX5JL7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardmandillon.BirdUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdUp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532863092B0003350098DED2 /* Build configuration list for PBXProject "BirdUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532863302B0003360098DED2 /* Debug */,
+				532863312B0003360098DED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532863322B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532863332B0003360098DED2 /* Debug */,
+				532863342B0003360098DED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532863352B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532863362B0003360098DED2 /* Debug */,
+				532863372B0003360098DED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532863382B0003360098DED2 /* Build configuration list for PBXNativeTarget "BirdUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532863392B0003360098DED2 /* Debug */,
+				5328633A2B0003360098DED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 532863062B0003350098DED2 /* Project object */;
+}
