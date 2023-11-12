@@ -14,6 +14,7 @@
 		532863232B0003360098DED2 /* BirdUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532863222B0003360098DED2 /* BirdUpTests.swift */; };
 		5328632D2B0003360098DED2 /* BirdUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328632C2B0003360098DED2 /* BirdUpUITests.swift */; };
 		5328632F2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328632E2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift */; };
+		5328634C2B0064C20098DED2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328634B2B0064C20098DED2 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		532863282B0003360098DED2 /* BirdUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5328632C2B0003360098DED2 /* BirdUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpUITests.swift; sourceTree = "<group>"; };
 		5328632E2B0003360098DED2 /* BirdUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5328634B2B0064C20098DED2 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				532863112B0003350098DED2 /* BirdUpApp.swift */,
 				532863132B0003350098DED2 /* ContentView.swift */,
+				5328634B2B0064C20098DED2 /* CameraView.swift */,
 				532863152B0003360098DED2 /* Assets.xcassets */,
 				532863172B0003360098DED2 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 				5328630A2B0003350098DED2 /* Sources */,
 				5328630B2B0003350098DED2 /* Frameworks */,
 				5328630C2B0003350098DED2 /* Resources */,
+				5328634D2B011ADC0098DED2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,11 +256,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5328634D2B011ADC0098DED2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5328630A2B0003350098DED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5328634C2B0064C20098DED2 /* CameraView.swift in Sources */,
 				532863142B0003350098DED2 /* ContentView.swift in Sources */,
 				532863122B0003350098DED2 /* BirdUpApp.swift in Sources */,
 			);
@@ -424,7 +449,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9YFX5JL7M;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,7 +480,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9YFX5JL7M;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
