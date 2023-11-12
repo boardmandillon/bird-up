@@ -44,14 +44,15 @@ class ViewController: UIViewController {
     }
 
     func setupCaptureSession() {
-        guard let videoDevice = AVCaptureDevice.default(.builtInDualWideCamera,for: .video, position: .back) else { return }
-        guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice) else { return }
-    
-        guard captureSession.canAddInput(videoDeviceInput) else { return }
-        captureSession.addInput(videoDeviceInput)
+        guard let device = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back) else { return }
+        guard let deviceInput = try? AVCaptureDeviceInput(device: device) else { return }
 
+        guard captureSession.canAddInput(deviceInput) else { return }
+        captureSession.addInput(deviceInput)
+
+        let screen = UIScreen.main.bounds.size
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        previewLayer.frame = CGRect(x: 0, y: 0, width: screen.width, height: screen.height)
         previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         previewLayer.connection!.videoRotationAngle = 90.0
 

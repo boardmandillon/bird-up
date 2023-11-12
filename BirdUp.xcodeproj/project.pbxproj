@@ -140,6 +140,7 @@
 				5328630A2B0003350098DED2 /* Sources */,
 				5328630B2B0003350098DED2 /* Frameworks */,
 				5328630C2B0003350098DED2 /* Resources */,
+				5328634D2B011ADC0098DED2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,6 +255,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5328634D2B011ADC0098DED2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5328630A2B0003350098DED2 /* Sources */ = {
@@ -428,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9YFX5JL7M;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,6 +480,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdUp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9YFX5JL7M;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
