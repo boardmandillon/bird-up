@@ -11,7 +11,7 @@ import SwiftUI
 struct BirdUpApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraView()
         }
     }
 }
